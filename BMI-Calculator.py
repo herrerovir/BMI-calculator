@@ -29,10 +29,20 @@ while again == "y":
     else:
         print("You are obese")
     
-    again = input("Would you like to calculate your BMI again? Y/N ").lower()
-    if again == "n":
-        print("Thank you for using the calcutator!")
-        break
+    while True:
+        again = input("Would you like to calculate your BMI again? Y/N ").lower()
+
+        try:
+            if again == "y":
+                break
+            elif again == "n":
+                print("Thank you for using the BMI calculator")
+                break
+            else:
+                raise Exception("Invalid input! Answer 'Y' or 'N' ")
+            
+        except Exception as e:
+            print(e)
 
 
 
