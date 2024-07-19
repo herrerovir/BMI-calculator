@@ -9,22 +9,30 @@ time.sleep(1)
 print("Let's calculate your BMI")
 time.sleep(1)
 
-#User input
-weight = float(input("Enter your weight in kg: "))
-height = float(input("Enter your height in cm: "))
+again = "y"
 
-#Display BMI 
-BMI = bodymassindex(weight, height)
-print ("Your BMI is:", BMI)
+while again == "y":
+    #User input
+    weight = float(input("Enter your weight in kg: "))
+    height = float(input("Enter your height in cm: "))
 
-if (BMI < 18.5):
-    print("You are underweight")
-elif (BMI <= 24.9):
-    print("Your weight is within the normal range")
-elif (BMI < 30):
-    print("You are overweight")
-else:
-    print("You are obese")   
+    #Display BMI 
+    BMI = bodymassindex(weight, height)
+    print ("Your BMI is:", BMI)
+
+    if (BMI < 18.5):
+        print("You are underweight")
+    elif (BMI <= 24.9):
+        print("Your weight is within the normal range")
+    elif (BMI < 30):
+        print("You are overweight")
+    else:
+        print("You are obese")
+    
+    again = input("Would you like to calculate your BMI again? Y/N ").lower()
+    if again == "n":
+        print("Thank you for using the calcutator!")
+        break
 
 
 
