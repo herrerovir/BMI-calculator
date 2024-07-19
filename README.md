@@ -1,5 +1,6 @@
 # BMI calculator
-![GitHub top language](https://img.shields.io/github/languages/top/herrerovir/bmi-calculator)
+![GitHub top language](https://img.shields.io/github/languages/top/herrerovir/bmi-calculator) ![GitHub License](https://img.shields.io/github/license/herrerovir/bmi-calculator)
+
 
 Body Mass Index (BMI) is a tool used to estimate the amount of body fat by using your height and weight measurements.
 
@@ -18,4 +19,8 @@ Libraries used: time
 * Run the BMI-calculator.py file in a Python environment
 
 * Discover what your BMI is and how healthy you are!
+
+## License:
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE)  file for details
 
